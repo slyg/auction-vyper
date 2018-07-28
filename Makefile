@@ -8,5 +8,11 @@ build:
 	@truffle compile
 	@truper
 
-.PHONY: build clean
+develop:
+	truffle migrate
+
+console:
+	truffle console
+
+.PHONY: build clean console develop
 .DEFAULT_GOAL := build
